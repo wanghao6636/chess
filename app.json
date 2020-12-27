@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/home/boxDetail/boxDetail",
+    "pages/takeOrder/takeOrder",
+    "pages/takeOrder/trueOrder/trueOrder",
+    "pages/community/community",
+    "pages/community/chatRoom/chatRoom",
+    "pages/mine/mine",
+    "pages/mine/topUp/topUp",
+    "pages/mine/suggeste/suggeste",
+    "pages/mine/foodOrders/foodOrders",
+    "pages/mine/myOrder/myOrder",
+    "pages/mine/userBox/userBox",
+    "pages/mine/editorBox/editorBox",
+    "pages/mine/points/points",
+    "pages/mine/points/pointRecord/pointRecord",
+    "pages/theStore/theStore",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#5C250D",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "iconPath": "imgs/nav/indexfalse.png",
+        "selectedIconPath": "imgs/nav/indextrue.png",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/takeOrder/takeOrder",
+        "iconPath": "imgs/nav/orderf.png",
+        "selectedIconPath": "imgs/nav/ordert.png",
+        "text": "点菜"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "imgs/nav/communityf.png",
+        "selectedIconPath": "imgs/nav/communityt.png",
+        "text": "社群"
+      }, {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "imgs/nav/minf.png",
+        "selectedIconPath": "imgs/nav/mint.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

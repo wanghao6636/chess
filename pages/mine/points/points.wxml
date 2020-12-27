@@ -1,0 +1,55 @@
+<!--pages/mine/points/points.wxml-->
+<view class="parent content">
+	<view class="header flex flex-Updown-between" style="top:{{statusBarHeight*2}}rpx;height:{{MenuButtonHight*2}}rpx">
+		<image catchtap="goBack" src="../../../imgs/home/left00.png"></image>
+		<text>积分兑换</text>
+		<image src=""></image>
+	</view>
+	<view class="points-top">
+		<image src="../../../imgs/mine/topbj.png"></image>
+		<view class="point-top-view">
+			<view class="ptv1">1260</view>
+			<!-- <view class="ptv2 flex flex-Updown-between">
+        <view class="ptv2-1">
+          <view>消费得积分</view>
+          <view>积分换商品</view>
+        </view>
+        <image src=""></image>
+      </view> -->
+		</view>
+	</view>
+
+	<view class="point-box">
+		<view class="point-box-top flex flex-Updown-between">
+			<text>兑换专区</text>
+			<text catchtap="toRecord">兑换记录</text>
+		</view>
+		<scroll-view scroll-y="true" style="height:{{timeHeight}}px" class="pointItems flex flex-Updown">
+			<view class="point-item  inline" wx:for="{{4}}" wx:key="index">
+				<image src="../../../imgs/home/036.jpg" mode="heightFix"></image>
+				<view class="point-item-01  flex">冰糖杨梅干 8.8元</view>
+				<view class="point-item-02 flex flex-Updown-between">
+					<view>
+						<text>500</text>
+						<text>积分</text>
+					</view>
+					<view class="button" catchtap="exChange">兑换</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>
+
+<view class="zzc" hidden="{{!isExChange}}">
+	<view class="pointsForBox">
+		<image src="../../../imgs/mine/bj2x.png"></image>
+		<view class="pointsForBoxItem">
+			<view class="pf01">本次将消耗<text style="color:#FF494E">500</text>积分</view>
+			<view class="pf01">确定兑换吗？</view>
+			<view class="coltrons flex flex-Updown-between">
+				<view class="cancel button" catchtap="submits" data-type="0">取消</view>
+				<view class="cirfrom button" catchtap="submits" data-type="1">确定</view>
+			</view>
+		</view>
+	</view>
+</view>

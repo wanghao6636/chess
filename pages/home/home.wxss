@@ -1,0 +1,157 @@
+/* pages/home/home.wxss */
+.content {
+  background: #f4f4f4;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+}
+
+.statusNav {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.statusNav .statusNav-left text {
+  color: #333333;
+  font-size: 24rpx;
+  display: block;
+  width: 100rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.statusNav .statusNav-left image {
+  width: 16rpx;
+  height: 16rpx;
+  margin-left: 11rpx;
+}
+
+.statusNav>text {
+  color: #333333;
+  font-size: 34rpx;
+}
+
+.cotent-view {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 372rpx;
+  margin-top: 21rpx;
+  border-radius: 5px;
+  box-shadow: -3rpx 14rpx 16rpx 0rpx rgba(67, 67, 67, 0.28);
+}
+
+/* .swiper-item{
+  position: relative;
+} */
+.swiper-item .wordInfo {
+  position: absolute;
+  height: 136rpx;
+  width: 100%;
+  top: 50%;
+  margin-top: -68rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #FEFEFE;
+  font-family: MComic HKS Medium, MComic HKS Medium-Medium;
+  background: #5C250D;
+  z-index: 9999;
+  opacity: .6;
+}
+
+.swiper-indicator {
+  width: 100%;
+  margin-top: 41rpx;
+}
+
+.swiper-indicator .indicator-dot-active {
+  width: 23rpx !important;
+  opacity: 1 !important;
+  border-radius: 5rpx !important;
+}
+
+.swiper-indicator .indicator-dots {
+  width: 10rpx;
+  height: 10rpx;
+  background: #5C250D;
+  opacity: .5;
+  margin-right: 9rpx;
+  border-radius: 50%;
+}
+
+.orderBox {
+  margin-top: 47rpx;
+}
+
+.order-box-title {
+  width: 100%;
+}
+
+.order-box-title>text {
+  color: #333333;
+  font-size: 30rpx;
+}
+
+.order-box-title>image {
+  width: 13rpx;
+  height: 23rpx;
+}
+
+.order-boxs {
+  width: 100%;
+  margin-top: 33rpx;
+}
+
+.order-boxs-item {
+  width: 345rpx;
+  /* height: 318rpx; */
+  border-radius: 5rpx;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 22rpx;
+}
+
+.order-boxs-item:nth-child(2n-1) {
+  margin-right: 18rpx;
+}
+
+.order-boxs-item>image {
+  width: 100%;
+  height: 215rpx;
+}
+
+.order-boxs-item-bottom {
+  height: 103rpx;
+  padding: 0 19rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-boxs-item-info>text:first-child {
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.order-boxs-item-info>text:last-child {
+  color: #F9191F;
+  font-size: 26rpx;
+}
+
+.ordered {
+  width: 98rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  background: #FFA801;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 21rpx;
+}

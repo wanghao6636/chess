@@ -1,0 +1,230 @@
+/* pages/mine/points/points.wxss */
+.content {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.header image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.header text {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.points-top {
+  width: 100%;
+  height: 512rpx;
+  position: relative;
+  /* background: #3e3e40; */
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.02);
+}
+
+.points-top>image {
+  width: 100%;
+  height: 100%;
+}
+
+.point-top-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+}
+
+.ptv1 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 174rpx;
+  font-size: 58rpx;
+}
+
+.ptv2 {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-top: 48rpx;
+}
+
+.ptv2>image {
+  width: 160rpx;
+  height: 137rpx;
+}
+
+.ptv2-1>view:first-child {
+  color: #fff;
+  font-size: 52rpx;
+}
+
+.ptv2-1>view:last-child {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.point-box {
+  width: 100%;
+  position: relative;
+  border-radius: 30rpx 30rpx 0 0;
+  top: -85rpx;
+  z-index: 990;
+  border: .5rpx solid transparent;
+  background: #fff;
+}
+
+.point-box-top {
+  width: 100%;
+  margin-top: 42rpx;
+  padding: 0 33rpx;
+  box-sizing: border-box;
+  margin-bottom: 43rpx;
+}
+
+.point-box-top>text:first-child {
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.point-box-top>text:last-child {
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.pointItems {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.point-item {
+  width: 330rpx;
+  height: 386rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 10rpx 0px rgba(82, 82, 82, 0.09);
+  border: .5rpx solid transparent;
+  text-align: center;
+  margin-right: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.point-item:nth-child(2n) {
+  margin-right: 0rpx;
+}
+
+.point-item>image {
+  /* width: 175rpx; */
+  height: 176rpx;
+  margin: 32rpx auto 0;
+}
+
+.point-item-01 {
+  color: #333333;
+  font-size: 26rpx;
+  width: 100%;
+  padding-left: 33rpx;
+  box-sizing: border-box;
+  margin-top: 55rpx;
+}
+
+.point-item-02 {
+  width: 100%;
+  padding: 0 26rpx 0 34rpx;
+  box-sizing: border-box;
+  margin-top: 18rpx;
+}
+
+.point-item-02 text:first-of-type {
+  color: #F9191F;
+  font-size: 30rpx;
+}
+
+.point-item-02 text:last-of-type {
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.point-item-02 .button {
+  width: 102rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  background: #FF494E;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 5rpx;
+}
+
+.pointsForBox {
+  width: 426rpx;
+  height: 456rpx;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.pointsForBox>image {
+  width: 100%;
+  height: 100%;
+}
+
+.pointsForBoxItem {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pf01 {
+  color: #333333;
+  font-size: 30rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.pf01:nth-child(1) {
+  margin-top: 165rpx;
+}
+
+.pf01:nth-child(2) {
+  margin-top: 20rpx;
+}
+
+.coltrons {
+  width: 100%;
+  padding: 0 45rpx;
+  box-sizing: border-box;
+  margin-top: 93rpx;
+}
+
+.coltrons .cancel,
+.coltrons .cirfrom {
+  width: 135rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  font-size: 26rpx;
+}
+
+.coltrons .cancel {
+  border: 2rpx solid #A7A7A7;
+  color: #A7A7A7;
+}
+
+.coltrons .cirfrom {
+  background: #FF5055;
+  color: #fff;
+}

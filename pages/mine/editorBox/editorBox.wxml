@@ -1,0 +1,19 @@
+<!--pages/mine/editorBox/editorBox.wxml-->
+<view class="parent content">
+	<view class="inputBox">
+		<view class="inputBox-item flex flex-Updown-between">
+			<text>联系人</text>
+			<input type="text" placeholder="请输入你的名字" placeholder-style="color:#AAAAAA;font-size:26rpx"></input>
+		</view>
+		<view class="inputBox-item flex flex-Updown-between">
+			<text>联系电话</text>
+			<input type="text" placeholder="请输入你的电话" placeholder-style="color:#AAAAAA;font-size:26rpx"></input>
+		</view>
+		<view class="inputBox-item flex flex-Updown-between">
+			<text>所在包厢</text>
+			<input style="border-bottom:0" type="text" placeholder="店铺包厢位置" placeholder-style="color:#AAAAAA;font-size:26rpx"></input>
+		</view>
+	</view>
+
+	<view class="button saved">保存</view>
+</view>

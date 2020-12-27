@@ -1,0 +1,18 @@
+<!--pages/mine/points/pointRecord/pointRecord.wxml-->
+
+<view class="parent content">
+	<view class="records">
+		<view class="record-item flex">
+			<image src="../../../../imgs/home/070.jpg"></image>
+			<view class="record-item-right">
+				<text class="rir01">冰糖杨梅干  8.8元</text>
+				<view class="rir02 flex flex-Updown-between">
+					<text>兑换日期：2020-10-01  12:26:26</text>
+					<text>-500积分</text>
+				</view>
+				<view class="rir03"></view>
+			</view>
+		</view>
+	</view>
+
+</view>

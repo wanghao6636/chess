@@ -1,0 +1,133 @@
+<!--pages/mine/foodOrders/foodOrders.wxml-->
+<view class="content">
+	<view class="orderNav">
+		<view class="orderNav-item" data-nid='0' catchtap="switchNav">
+			<view class="{{navSeleted=='0'?'navSeleted':''}}">全部</view>
+			<view class="{{navSeleted=='0'?'navbSeleted':''}}"></view>
+		</view>
+		<view class="orderNav-item" data-nid='1' catchtap="switchNav">
+			<view class="{{navSeleted=='1'?'navSeleted':''}}">待付款</view>
+			<view class="{{navSeleted=='1'?'navbSeleted':''}}"></view>
+		</view>
+		<view class="orderNav-item" data-nid='2' catchtap="switchNav">
+			<view class="{{navSeleted=='2'?'navSeleted':''}}">已取消</view>
+			<view class="{{navSeleted=='2'?'navbSeleted':''}}"></view>
+		</view>
+		<view class="orderNav-item" data-nid='3' catchtap="switchNav">
+			<view class="{{navSeleted=='3'?'navSeleted':''}}">已完成</view>
+			<view class="{{navSeleted=='3'?'navbSeleted':''}}"></view>
+		</view>
+	</view>
+	<swiper class="swiper" bindchange="bindSwitch" current="{{navSeleted}}" style="height: {{timeHeight}}rpx;">
+		<swiper-item>
+			<scroll-view bindscrolltolower='bindBottom' scroll-y="true" style="height: 100%;width: 100%;">
+				<view class="swiper-item" wx:for="{{arr}}" wx:key="u" data-index="{{index}}">
+					<view class="si-top">{{item.orderStatus=='1'?'待付款，剩余11:20':(item.orderStatus=='2'?'已付款':'已完成')}} </view>
+					<view class="si-line"></view>
+					<view class="si-time flex flex-Updown-between">
+						<image src="../../../imgs/home/070.jpg"></image>
+						<view class="si-time-right">
+							<view class="str1 flex flex-Updown-between">
+								<text>{{item.text}}</text>
+								<text>￥59.00</text>
+							</view>
+							<view class="str2 flex flex-Updown-between">
+								<text>规格：原味，不加汤</text>
+								<text>×1</text>
+							</view>
+						</view>
+					</view>
+					<!-- 按钮 -->
+					<view wx:if="{{item.orderStatus=='2'}}" class="button submit">再来一单</view>
+					<view class="submits" wx:if="{{item.orderStatus=='1'}}">
+						<view class="button " data-index="{{index}}">取消订单</view>
+						<view class="button " data-index="{{index}}">付款</view>
+					</view>
+					<view class="submits" wx:if="{{item.orderStatus=='3'}}">
+						<view class="button " data-index="{{index}}">删除订单</view>
+						<view class="button " data-index="{{index}}">再来一单</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+    
+		<swiper-item>
+			<scroll-view scroll-y="true" bindscrolltolower='bindBottom' style="height: 100%;width: 100%;">
+				<view class="swiper-item" wx:for="{{arr}}" wx:key="u" data-index="{{index}}" wx:if="{{item.orderStatus=='1'}}">
+					<view class="si-top">待付款，剩余11:20</view>
+					<view class="si-line"></view>
+					<view class="si-time flex flex-Updown-between">
+						<image src="../../../imgs/home/070.jpg"></image>
+						<view class="si-time-right">
+							<view class="str1 flex flex-Updown-between">
+								<text>{{item.text}}</text>
+								<text>￥59.00</text>
+							</view>
+							<view class="str2 flex flex-Updown-between">
+								<text>规格：原味，不加汤</text>
+								<text>×1</text>
+							</view>
+						</view>
+					</view>
+					<!-- 按钮 -->
+					<view class="submits">
+						<view class="button " data-index="{{index}}">取消订单</view>
+						<view class="button " data-index="{{index}}">付款</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-y="true" bindscrolltolower='bindBottom' style="height: 100%;width: 100%;">
+				<view class="swiper-item" wx:for="{{arr}}" wx:key="u" data-index="{{index}}" wx:if="{{item.orderStatus=='3'}}">
+					<view class="si-top">已取消</view>
+					<view class="si-line"></view>
+					<view class="si-time flex flex-Updown-between">
+						<image src="../../../imgs/home/070.jpg"></image>
+						<view class="si-time-right">
+							<view class="str1 flex flex-Updown-between">
+								<text>{{item.text}}</text>
+								<text>￥59.00</text>
+							</view>
+							<view class="str2 flex flex-Updown-between">
+								<text>规格：原味，不加汤</text>
+								<text>×1</text>
+							</view>
+						</view>
+					</view>
+					<!-- 按钮 -->
+					<view class="submits">
+						<view class="button " data-index="{{index}}">删除订单</view>
+						<view class="button " data-index="{{index}}">再来一单</view>
+					</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+		<swiper-item>
+			<scroll-view scroll-y="true" bindscrolltolower='bindBottom' style="height: 100%;width: 100%;">
+				<view class="swiper-item" wx:for="{{arr}}" wx:key="u" data-index="{{index}}" wx:if="{{item.orderStatus=='2'}}">
+					<view class="si-top">已完成</view>
+					<view class="si-line"></view>
+					<view class="si-time flex flex-Updown-between">
+						<image src="../../../imgs/home/070.jpg"></image>
+						<view class="si-time-right">
+							<view class="str1 flex flex-Updown-between">
+								<text>{{item.text}}</text>
+								<text>￥59.00</text>
+							</view>
+							<view class="str2 flex flex-Updown-between">
+								<text>规格：原味，不加汤</text>
+								<text>×1</text>
+							</view>
+						</view>
+					</view>
+					<!-- 按钮 -->
+					<view class="button submit">再来一单</view>
+				</view>
+			</scroll-view>
+		</swiper-item>
+
+	</swiper>
+</view>

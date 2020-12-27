@@ -1,0 +1,87 @@
+<!--pages/mine/mine.wxml-->
+<view class="parent content">
+	<view class="userInfo flex flex-Updown-between">
+		<image src="../../imgs/home/070.jpg"></image>
+		<view class="userInfo-right flex flex-Updown-between">
+			<view class="infos">
+				<text class="block">阿斯蒂芬123</text>
+				<view class="userPhone flex flex-Updown-between">
+					<image src="../../imgs/mine/phone.png"></image>
+					<text>135****1256</text>
+				</view>
+			</view>
+			<image src="../../imgs/mine/back1.png"></image>
+		</view>
+	</view>
+
+	<view class="userContent">
+		<view class="uc-top flex flex-Updown-between">
+			<view class="uc-top-left">
+				<view class="ctl1 flex flex-Updown">
+					<text>我的积分</text>
+					<image src="../../imgs/mine/jf.png"></image>
+				</view>
+				<view class="ctl2 flex flex-Updown">
+					<text>1260</text>
+					<image catchtap="openIntegral" src="../../imgs/takeOrder/question.png"></image>
+				</view>
+			</view>
+			<view class="uc-top-right button" catchtap="pointsFor">兑换</view>
+		</view>
+
+		<view class="topUp flex flex-Updown-between">
+			<view class="topUp-left flex flex-Updown">
+				<image src="../../imgs/mine/qd.png"></image>
+				<text>余额：￥1260.00</text>
+			</view>
+			<navigator hover-class="none" url="./topUp/topUp" class="topUp-right button">充值</navigator>
+		</view>
+
+		<view class="myOrder">
+			<view class="order-top flex flex-Updown-between">
+				<text>我的订单</text>
+				<view class="order-top-right" data-type="0" catchtap="toOrders">
+					<text>全部</text>
+					<image src="../../imgs/takeOrder/right.png"></image>
+				</view>
+			</view>
+			<view class="myOrder-nav flex flex-Updown-around ">
+				<view class="myOrder-nav-item" data-type="1" catchtap="toOrders">
+					<image style="width:38rpx;height:46rpx" src="../../imgs/mine/ordered.png"></image>
+					<view>待付款</view>
+				</view>
+				<view class="myOrder-nav-item" data-type="2" catchtap="toOrders">
+					<image style="width:45rpx;height:45rpx" src="../../imgs/mine/succeed.png"></image>
+					<view>已付款</view>
+				</view>
+				<view class="myOrder-nav-item" data-type="3" catchtap="toOrders">
+					<image style="width:45rpx;height:44rpx" src="../../imgs/mine/cancel.png"></image>
+					<view>已取消</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="myTools">
+			<view class="toll-tit">工具</view>
+			<view class="toolitems">
+				<navigator hover-class="none" url="{{item.url}}" class="tool-item inline" wx:for="{{arr1}}" wx:key="index">
+					<image style="width:{{item.style.width}};height:{{item.style.height}}" src="{{item.image}}"></image>
+					<view>{{item.text}}</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="zzc" wx:if="{{isIntegral}}">
+	<view class="integral-box">
+		<image class="boxbj childAll" src="../../imgs/mine/boxbj.png"></image>
+		<view class="integrals childAll">
+			<view>积分说明</view>
+			<text class="block">1. 每消费1元即可得1积分</text>
+			<text class="block">2. 所得积分可兑换店内相应商品</text>
+			<text class="block">3. 如遇店内活动，付款时即可享受积分抵现的优惠，具体详情以店内活动付款页面为准</text>
+		</view>
+		<image class="close" catchtap="closeIntegral" src="../../imgs/mine/close.png"></image>
+	</view>
+</view>

@@ -1,0 +1,99 @@
+/* pages/mine/suggeste/suggeste.wxss */
+.content {
+  border-top: 2rpx solid #F7F7F7;
+  padding-top: 13rpx;
+  box-sizing: border-box;
+}
+
+.questions-tit {
+  color: #666666;
+  font-size: 28rpx;
+  margin-top: 47rpx;
+  margin-left: 40rpx;
+}
+
+.questionTypes {
+  width: 100%;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+
+.questionTypes>.type-item {
+  width: 198rpx;
+  height: 62rpx;
+  text-align: center;
+  line-height: 62rpx;
+  background: #F7F7F7;
+  color: #666666;
+  font-size: 26rpx;
+  border-radius: 5rpx;
+  margin-right: 38rpx;
+}
+
+.questionTypes>.type-item-active {
+  background: #5C250D !important;
+  color: #FFFFFF !important;
+}
+
+.textarea {
+  width: 670rpx;
+  height: 260rpx;
+  margin: 29rpx auto 0;
+  padding: 26rpx 36rpx;
+  box-sizing: border-box;
+  background: #F7F7F7;
+  border-radius: 10rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.upImages {
+  width: 100%;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  flex-wrap: wrap;
+}
+
+.upImages .addButton {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 10rpx;
+  position: relative;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.br10 {
+  border-radius: 10rpx;
+}
+
+.addButton .deleImage {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  top: -16rpx;
+  right: -16rpx;
+}
+
+.inputs {
+  width: 670rpx;
+  height: 98rpx;
+  background: #F7F7F7;
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 35rpx;
+  margin: 31rpx auto 0;
+}
+
+.submited {
+  width: 416rpx;
+  height: 80rpx;
+  background: #5C250D;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  margin: 80rpx auto 0;
+  line-height: 80rpx;
+  border-radius: 5rpx;
+}

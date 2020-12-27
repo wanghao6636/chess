@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<view class="content">
+  <image class="childAll" src="../../imgs/login/loginbj.png"></image>
+  <view class="login-view">
+    <view class="login-title"> <text>用户登录</text> </view>
+    <view class="login-box flex flex-Updown" style="margin-bottom: 49rpx;"> 
+      <image class="img1" src="../../imgs/login/phone.png"></image>
+      <view class="login-line"></view>
+     <input type="number" maxlength="11" placeholder-style="color:#FFFFFF;font-size:26rpx"  placeholder="请输入手机号"/>
+    </view>
+    <view class="login-box flex flex-Updown"> 
+      <image class="img2" src="../../imgs/login/pwd.png"></image>
+      <view class="login-line"></view>
+     <input type="number" maxlength="11" placeholder-style="color:#FFFFFF;font-size:26rpx"  placeholder="请输入密码"/>
+    </view>
+    <view class="forgetpwd"> <text>忘记密码</text> </view>
+    <view>
+      <button class="tologin button" catchtap="toLogin">登录</button>
+    </view>
+  </view>
+</view>
+<view class="reg">注册账号></view>
+

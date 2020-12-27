@@ -1,0 +1,144 @@
+/* pages/community/chatRoom/chatRoom.wxss */
+.content {
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+  border-top: 0.5rpx solid transparent;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.chat-time {
+  width: 100%;
+  color: #666666;
+  font-size: 24rpx;
+  margin-top: 47rpx;
+  text-align: center;
+}
+
+.chats {
+  width: 100%;
+}
+
+.chat-left,
+.chat-right {
+  width: 100%;
+  margin-top: 37rpx;
+  align-items: flex-start;
+}
+
+.chat-right>image {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 10rpx;
+  margin-left: 37rpx;
+}
+
+.chat-left>image {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 10rpx;
+  margin-right: 37rpx;
+  margin-top: 10rpx;
+}
+
+.chat-body .chat-body-name {
+  color: #999999;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.chat-dialog {
+  max-width: 542rpx;
+  position: relative;
+  padding: 27rpx 34rpx;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  background: #ffff;
+  border-radius: 20rpx;
+}
+
+.chat-dialog text {
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.chat-left .chat-dialog view {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  transform: rotate(45deg);
+  background: #ffff;
+  left: -13rpx;
+  top: 25rpx;
+  border-radius: 8rpx;
+}
+
+.chat-right .chat-dialog view {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  transform: rotate(45deg);
+  background: #ffff;
+  right: -13rpx;
+  top: 25rpx;
+  border-radius: 8rpx;
+}
+
+.chat-image {
+  /* width: 298rpx;
+  height: 202rpx; */
+  border-radius: 20rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.chat-audio {
+  color: #666666;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.chatInput {
+  width: 100vw;
+  height: 98rpx;
+  padding: 0 31rpx 0 20rpx;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  background: #ffffff;
+  box-shadow: -3rpx 2rpx 8rpx 0rpx rgba(25, 25, 25, 0.51);
+  box-sizing: border-box;
+  left: 0;
+  z-index: 9999999;
+}
+
+.chatInputi1 {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 16rpx;
+}
+
+.chatInputi2 {
+  width: 44rpx;
+  height: 44rpx;
+  margin: 0 27rpx;
+}
+
+.chatInputi3 {
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.chatInput input {
+  width: 492rpx;
+  height: 68rpx;
+  border: 2rpx solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  color: #333333;
+}

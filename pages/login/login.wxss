@@ -1,0 +1,75 @@
+/* pages/login/login.wxss */
+.content{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.login-view{
+  width: 600rpx;
+  position: absolute;
+  left: 75rpx;
+  z-index: 999;
+  /* height: 100%; */
+  /* overflow: hidden; */
+  top: 20vh;
+}
+.login-title{
+  font-size: 36rpx;
+  color: #FFFFFF;
+  margin-bottom: 75rpx;
+  /* margin-top: 20%; */
+}
+.login-box{
+  width: 100%;
+  padding: 0 53rpx;
+  box-sizing: border-box;
+  height: 96rpx;
+  border: 2rpx solid #FFFFFF;
+  border-radius: 5rpx;
+}
+.login-box .img1{
+  width: 30rpx;
+  height: 40rpx;
+}
+.login-box .img2{
+  width: 33rpx;
+  height: 44rpx;
+}
+.login-line{
+  width: 2rpx;
+  height: 44rpx;
+  background: #E0E0E0;
+  margin-left: 31rpx;
+  margin-right: 27rpx;
+}
+.login-box input{
+  width: 400rpx;
+  background: rgba(0, 0, 0, 0);
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.forgetpwd{
+  margin-top: 31rpx;
+  margin-left: 480rpx;
+  color: #FFFFFF;
+  font-size: 26rpx;
+}
+.tologin{
+  width: 600rpx !important;
+  height: 88rpx;
+  background: #5C250D;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 88rpx;
+  margin-top: 81rpx;
+}
+.reg{
+  color: #FFFFFF;
+  font-size: 26rpx;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  bottom: 46rpx;
+  left: 0;
+  z-index: 999;
+}

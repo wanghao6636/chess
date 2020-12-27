@@ -1,0 +1,23 @@
+<!--pages/mine/userBox/userBox.wxml-->
+<view class="parent content">
+	<view class="chess-box" wx:for="{{userBox}}" wx:key="index">
+		<view class="cb-top flex flex-Updown-between">
+			<text>陈独秀</text>
+			<text>15838812688</text>
+		</view>
+		<view class="chess-name">萧山5元包厢</view>
+		<view class="chess-line"></view>
+		<view class="chess-bottom flex flex-Updown-between">
+			<view class="chess-bottom-left flex flex-Updown" data-index="{{index}}" catchtap="seleteDefautBox">
+				<image wx:if="{{isSeleted==index}}" src="../../../imgs/mine/succ.png"></image>
+				<image wx:else src="../../../imgs/mine/nosucc.png"></image>
+				<text wx:if="{{isSeleted==index}}" >默认包厢</text>
+				<text wx:else>设为默认</text>
+			</view>
+			<view class="chess-bottom-right flex flex-Updown">
+				<view catchtap="editorBox">编辑</view>
+				<view catchtap="deleBox">删除</view>
+			</view>
+		</view>
+	</view>
+</view>

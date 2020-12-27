@@ -1,0 +1,23 @@
+<!--pages/mine/suggeste/suggeste.wxml-->
+
+<view class="parent content">
+	<view class="questions-tit">问题类型</view>
+	<view class="questionTypes flex ">
+		<view wx:for="{{arr1}}" catchtap="seleteQType" data-type="{{index}}" wx:key="index" class="type-item {{typeActived==index?'type-item-active':''}}">{{item.text}}</view>
+	</view>
+	<view class="questions-tit">我要反馈</view>
+	<textarea type='text' class="textarea" bindinput="bindText" data-type="text" placeholder-style="color:#999999;font-size:24rpx" placeholder="请输入遇到的问题或建议…"></textarea>
+	<view class="upImages flex">
+		<view class="addButton inline">
+			<image class="childAll" catchtap="uploadImage" src="../../../imgs/mine/addImage.png"></image>
+		</view>
+		<view class="addButton inline" wx:for="{{upImages}}" wx:key='index'>
+			<image class="childAll br10" src="{{item}}"></image>
+			<image class="deleImage" catchtap="deleImage" data-index="{{index}}" src="../../../imgs/mine/dele2.png"></image>
+		</view>
+	</view>
+	<view class="questions-tit">联系方式</view>
+	<input type="number" maxlength="11" bindinput="bindText" data-type="phone" class="inputs" placeholder="请输入常用的手机号码" placeholder-style="color:#999999;font-size:24rpx"></input>
+
+	<view class="button submited" catchtap="toSubmit">提交</view>
+</view>

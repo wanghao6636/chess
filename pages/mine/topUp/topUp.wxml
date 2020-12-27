@@ -1,0 +1,31 @@
+<!--pages/mine/topUp/topUp.wxml-->
+<view class="parent content">
+	<view class="moneys">
+		<image class="childAll" src="../../../imgs/mine/group5.png"></image>
+		<view class="moneys-tit">我的余额（元）</view>
+		<view class="money">0.00</view>
+	</view>
+
+	<view class="czje">充值金额</view>
+
+	<view class="moneyItems flex">
+		<view data-moneytype="1" catchtap="seleteMoney" class="money-item flex flex-center {{moneyActived=='1'?'money-item-active':''}}">
+			<view class="inline">
+				<text class="block">充5000元</text>
+				<text class="block">送1500元</text>
+			</view>
+      <image hidden="{{moneyActived!='1'}}" src="../../../imgs/mine/succ2.png"></image>
+		</view> 
+    <view data-moneytype="2" catchtap="seleteMoney" class="money-item flex flex-center {{moneyActived=='2'?'money-item-active':''}}">
+			<view class="inline">
+				<text class="block">充10000元</text>
+				<text class="block">送3000元</text>
+			</view>
+      <image hidden="{{moneyActived!='2'}}" src="../../../imgs/mine/succ2.png"></image>
+		</view>
+	</view>
+
+  <view class="button nowPayFor">立即充值</view>
+</view>
+
+<view class="recordss">交易记录</view>

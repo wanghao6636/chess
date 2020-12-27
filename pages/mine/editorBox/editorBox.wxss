@@ -1,0 +1,42 @@
+/* pages/mine/editorBox/editorBox.wxss */
+.content {
+  background: #f4f4f4;
+}
+
+.inputBox {
+  width: 100%;
+  padding: 0 20rpx 0 24rpx;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+  background: #fff;
+}
+
+.inputBox-item {
+  width: 100%;
+}
+
+.inputBox-item>text {
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.inputBox-item>input {
+  height: 100rpx;
+  padding-left: 28rpx;
+  border-bottom: 2rpx solid #EEEEEE;
+  color: #333;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  width: 568rpx;
+}
+
+.saved {
+  width: 500rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  background: #5C250D;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  margin: 113rpx auto 0;
+}

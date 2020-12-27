@@ -1,0 +1,342 @@
+/* pages/takeOrder/takeOrder.wxss */
+@import "../home/home.wxss";
+
+.cotent-view {
+  padding: 0 20rpx 42rpx !important;
+}
+
+.content {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.foodsList {
+  width: 100%;
+  height: 703rpx;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.foodsList-left {
+  width: 150rpx;
+  height: 100%;
+  background: #F6F6F6;
+  padding-top: 25rpx;
+  box-sizing: border-box;
+}
+
+.foodsList-left-item {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 55rpx;
+}
+
+.foodsList-left-item>text {
+  color: #666666;
+  font-size: 28rpx;
+}
+
+.foodsList-left-item>.text-active {
+  color: #333333 !important;
+}
+
+.foodsList-left-item>view {
+  width: 30rpx;
+  height: 6rpx;
+  margin: 12rpx auto 0;
+}
+
+.foodsList-left-item>.view-active {
+  background: #FF9600 !important;
+}
+
+.foodsList-right {
+  width: 600rpx;
+  height: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.fri {
+  width: 100%;
+}
+
+.foodsList-right .foodsList-right-item {
+  width: 100%;
+  margin-top: 31rpx;
+}
+
+.foodsList-right .foodsList-right-item>image {
+  width: 140rpx;
+  height: 130rpx;
+  margin-right: 19rpx;
+  border-radius: 5rpx;
+}
+
+.foodsList-right .foodsList-right-item .foodsList-right-item-info {
+  width: 380rpx;
+
+}
+
+.frii-word1 {
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.frii-word2 {
+  width: 100%;
+  margin-top: 61rpx;
+}
+
+.frii-word2>text {
+  color: #FF0000;
+  font-size: 24rpx;
+}
+
+.frii-word2>view {
+  width: 96rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #FF9600;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 20rpx;
+}
+
+.frii-word2>image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.food-line {
+  width: 100%;
+  height: 2rpx;
+  background: #EDEDED;
+  margin-top: 28rpx;
+}
+
+.topay {
+  position: fixed;
+  width: 750rpx;
+  height: 98rpx;
+  bottom: 0;
+  padding: 0 20rpx 0 51rpx;
+  box-sizing: border-box;
+  box-shadow: 7rpx 0rpx 20rpx 0rpx rgba(58, 58, 58, 0.12);
+  z-index: 9999999;
+  background: #fff;
+}
+
+.topay-left>.topay-carts {
+  width: 46rpx;
+  height: 46rpx;
+  position: relative;
+}
+
+.topay-carts view {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: #f00;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 30rpx;
+}
+
+.topay-left>text {
+  color: #FF7800;
+  font-size: 28rpx;
+  margin-left: 52rpx;
+}
+
+.topay-right {
+  width: 160rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  color: #FFFFFF;
+  font-size: 26rpx;
+  border-radius: 31rpx;
+  background: #FF9600;
+}
+
+
+.seleteFood {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+}
+
+.seleteFood-box {
+  width: 560rpx;
+  /* height: 516rpx; */
+  background: #fff;
+  border-radius: 16rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 0 47rpx 45rpx;
+  box-sizing: border-box;
+}
+
+.sb-tit {
+  color: #000000;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 38rpx;
+}
+
+.sb-selete {
+  width: 100%;
+  margin-top: 40rpx
+}
+
+.sb-selete-word {
+  color: #888888;
+  font-size: 24rpx;
+}
+
+.sb-selete-detail {
+  width: 100%;
+}
+
+.sb-selete-detail .ssd-item {
+  width: 139rpx;
+  height: 54rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #888888;
+  font-size: 24rpx;
+  border: 2rpx solid #CBCBCB;
+  border-radius: 6rpx;
+  margin-top: 22rpx;
+  margin-right: 30rpx;
+}
+
+.ssd-item-active {
+  border: 2rpx solid #FF9600 !important;
+  background: rgba(255, 150, 0, .3) !important;
+  color: #FF9600 !important;
+}
+
+.sb-bottom {
+  width: 100%;
+  margin-top: 71rpx;
+}
+
+.sb-bottom>text {
+  color: #F9191F;
+  font-size: 24rpx;
+}
+
+.sb-bottom>view {
+  width: 188rpx;
+  height: 54rpx;
+  background: #FF9600;
+  line-height: 54rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 27rpx;
+}
+
+.carts {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  left: 0;
+  top: 0;
+}
+
+.carts-box {
+  width: 100%;
+  position: absolute;
+  /* bottom: 98rpx; */
+  height: 327rpx;
+  background: #fff;
+  padding: 0 23rpx;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  /* transform: rotateY(-100%); */
+}
+
+.carts-top {
+  padding-top: 34rpx;
+}
+
+.carts-top>text {
+  color: #999999;
+  font-size: 26rpx;
+}
+
+.carts-top>view>image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 11rpx;
+}
+
+.carts-top>view>text {
+  color: #999999;
+  font-size: 26rpx;
+}
+
+.carts-item {
+  width: 100%;
+  margin-top: 41rpx;
+}
+
+
+.ci-left>image {
+  width: 150rpx;
+  height: 105rpx;
+  margin-right: 14rpx;
+}
+
+.ci-left-right .cll1 {
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.ci-left-right .cll2 {
+  color: #999999;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.ci-left-right .cll3>text:first-child {
+  color: #FF0000;
+  font-size: 22rpx;
+}
+
+.ci-left-right .cll3>text:last-child {
+  color: #999999;
+  font-size: 20rpx;
+  display: inline-block;
+  margin-left: 18rpx;
+}
+
+
+.ci-right>image {
+  width: 41rpx;
+  height: 41rpx;
+}
+
+.ci-right>text {
+  display: inline-block;
+  width: 71rpx;
+  text-align: center;
+  height: 41rpx;
+  line-height: 41rpx;
+  color: #333333;
+  font-size: 36rpx;
+}

@@ -1,0 +1,36 @@
+<!--pages/community/community.wxml-->
+<view class="parent content">
+	<view class="cotent-view">
+		<swiper class="swiper" circular autoplay >
+			<swiper-item>
+				<view class="swiper-item childAll">
+					<image class="childAll" src="../../imgs/home/036.jpg"></image>
+					<view class="wordInfo flex flex-center">
+						<!-- <image></image> -->
+						<text>以牌会友</text>
+						<!-- <image></image> -->
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../imgs/home/070.jpg"></image>
+			</swiper-item>
+		</swiper>
+
+		<view class="orderBox ">
+			<view class="order-boxs flex flex-Updown warp">
+				<view class="order-boxs-item" wx:for="{{3}}" wx:key="index" catchtap="toDetail">
+					<image src="../../imgs/home/036.jpg"></image>
+					<view class=" order-boxs-item-bottom">
+						<view class="order-boxs-item-info ">
+							<text class="block">天上人间</text>
+							<text class="block" style="margin-top:10rpx">5元麻将间</text>
+						</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+	</view>
+
+</view>

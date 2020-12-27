@@ -1,0 +1,47 @@
+<!--pages/takeOrder/trueOrder/trueOrder.wxml-->
+<view class="parent content">
+	<view class="orderName flex flex-Updown-between" catchtap="toUserBox">
+		<view class="orderName-left" >
+			<text class="block">陈独秀</text>
+			<text class="block">包厢位置：萧山天上人间5元麻将房间</text>
+		</view>
+		<image src="../../../imgs/takeOrder/right.png"></image>
+	</view>
+
+	<view class="orderInfo">
+		<view class="orderInfo-item flex flex-Updown-between">
+			<image src="../../../imgs/home/036.jpg"></image>
+			<view class="oi-name ">
+				<view class="oi1 flex flex-Updown-between">
+					<text>西红柿见面</text>
+					<text>￥19.00</text>
+				</view>
+				<view class="oi2">规格：原味，不加汤</view>
+				<view class="oi3 flex flex-Updown-between">
+					<text></text>
+					<text>×1</text>
+				</view>
+			</view>
+		</view>
+		<view class="orderLine"></view>
+		<view class="prices flex flex-Updown">
+			<text class="pt3">￥27.8</text>
+			<text class="pt2">合计：</text>
+			<text class="pt1">共2件，</text>
+		</view>
+	</view>
+
+	<view class="instructe flex flex-Updown">
+		<text class="it1">积分</text>
+		<text class="it2">共56积分，满100积分，自动抵扣1元</text>
+		<image src="../../../imgs/takeOrder/question.png"></image>
+	</view>
+</view>
+
+<view class="submits flex flex-Updown-between">
+	<view class="submit-left flex flex-Updown">
+		<text class="st1">总计：</text>
+		<text class="st2">￥49.00</text>
+	</view>
+	<view class="button submit-right">提交订单</view>
+</view>

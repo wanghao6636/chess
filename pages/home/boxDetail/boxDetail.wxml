@@ -1,0 +1,55 @@
+<!--pages/home/boxDetail/boxDetail.wxml-->
+<view class="parent content">
+	<view style="height:{{MenuButtonHight*2}}rpx;width:100%;position:fixed;z-index:99999;top:{{statusBarHeight*2}}rpx" class="flex flex-Updown headers">
+		<image catchtap="goBack" src="../../../imgs/home/left00.png"></image>
+	</view>
+	<swiper class="swiper">
+		<swiper-item>
+			<image class="box-Image childAll" :src="box_img"></image>
+		</swiper-item>
+	</swiper>
+	<view class="box-Infos">
+		<view class="box-tit">{{box_shop}}</view>
+		<view class="box-line"></view>
+		<view class="box-word1 flex flex-Updown">
+			<text class="block">预订</text>
+			<text class="block">订</text>
+		</view>
+		<scroll-view scroll-x='true' class="box-timer">
+			<view catchtap="chooseDate" data-dates="{{item}}" data-index="{{index}}" class="box-timer-item flex flex-Updown {{dateSeleted==index?'box-timer-item-active':''}} " wx:for="{{daySeven}}" wx:key="index">
+				<view>
+					<text class="block {{dateSeleted==index?'text-active':''}}">{{index==0?'今天':item.week}}</text>
+					<text class="block {{dateSeleted==index?'text-active':''}}">{{item.month}}-{{item.day}}</text>
+				</view>
+			</view>
+		</scroll-view>
+		<view catchtap="packageChoosed" data-index="0" class="seleteDate1 flex flex-Updown-between">
+			<view class="sd-left">
+				<view>18:00至22点时间段</view>
+				<view>{{box_slotprice}}</view>
+			</view>
+			<view class="sd-right">
+				<image wx:if="{{packageActived==0}}" src="../../../imgs/home/seleted.png"></image>
+				<image wx:else src="../../../imgs/home/noseleted.png"></image>
+			</view>
+		</view>
+		<view class="box-line"></view>
+		<view catchtap="packageChoosed" data-index="1" class="seleteDate1 flex flex-Updown-between">
+			<view class="sd-left">
+				<view>全天（09:00-22:00）</view>
+				<view>{{box_allprice}}</view>
+			</view>
+			<view class="sd-right">
+				<image wx:if="{{packageActived==1}}" src="../../../imgs/home/seleted.png"></image>
+				<image wx:else src="../../../imgs/home/noseleted.png"></image>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="bottom flex flex-Updown">
+	<view class="flex flex-Updown bottom-left">
+		<text>合计：</text> <text>￥88</text>
+	</view>
+	<view class="button bottom-right" catchtap="toPay">付款预订</view>
+</view>

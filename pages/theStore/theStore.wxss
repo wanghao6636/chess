@@ -1,0 +1,55 @@
+/* pages/theStore/theStore.wxss */
+.content{
+  background: #F4F4F4;
+}
+.storeName{
+  width: 100%;
+  height: 90rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.storeName input{
+  width: 100%;
+  background: #F4F4F4;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #333;
+  padding-left: 41rpx;
+  box-sizing: border-box;
+  height: 60rpx;
+}
+.storeInfo{
+  width: 710rpx;
+  margin: 42rpx auto 0;
+  border-radius: 14rpx;
+  overflow: hidden;
+  padding: 0 40rpx 12rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.storeWhere{
+  margin-top: 35rpx;
+  margin-bottom: 17rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.storeInfo-item{
+  border-bottom: 2rpx solid #EEEEEE;
+  width: 100%;
+  padding: 28rpx 0;
+  box-sizing: border-box;
+}
+.storeInfo-item-top text:first-child{
+  font-size: 28rpx;
+  color: #333333;
+}
+.storeInfo-item-top text:last-child{
+  font-size: 26rpx;
+  color: #999999;
+}
+.storeInfo-item-address{
+  color: #999999;
+  font-size: 26rpx;
+  margin-top: 15rpx;
+}

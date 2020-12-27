@@ -1,0 +1,16 @@
+<!--pages/theStore/theStore.wxml-->
+<view class="parent content">
+	<view class="storeName flex flex-Updown">
+		<input type="text" placeholder="请输入店铺" bindblur="search" placeholder-style="color:#C6C6C6;font-szie:24rpx"></input>
+	</view>
+	<view class="storeInfo">
+		<view class="storeWhere"> <text>附近</text> </view>
+		<view class="storeInfo-item" wx:for="{{list}}" wx:key="index" style=" border-bottom:{{index==2?'none':'2rpx solid #EEEEEE'}}" catchtap="serinto" data-shop_id="{{item.shop_id}}" data-shop_name="{{item.shop_name}}">
+				<view class="storeInfo-item-top flex flex-Updown-between">
+					<text>{{item.shop_name}}</text>
+					<text>{{item.juli}}km</text>
+				</view>
+				<text class="storeInfo-item-address">{{item.shop_address_detail}}</text>
+		</view>
+	</view>
+</view>

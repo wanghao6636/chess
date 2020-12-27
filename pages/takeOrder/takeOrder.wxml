@@ -1,0 +1,106 @@
+<!--pages/takeOrder/takeOrder.wxml-->
+<view class="parent ">
+	<view class="cotent-view">
+		<swiper class="swiper" circular autoplay>
+			<swiper-item>
+				<view class="swiper-item childAll">
+					<image class="childAll" src="../../imgs/home/036.jpg"></image>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../imgs/home/070.jpg"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="foodsList flex flex-Updown" style="height:{{timeHeight}}rpx">
+		<scroll-view scroll-y="true" class="foodsList-left">
+			<view class="foodsList-left-item">
+				<text class="text-active">面类食品</text>
+				<view class="view-active"></view>
+			</view>
+		</scroll-view>
+		<scroll-view scroll-y="true" class="foodsList-right">
+			<view class="fri">
+				<view class="foodsList-right-item flex flex-Updown">
+					<image src="../../imgs/home/070.jpg"></image>
+					<view class="foodsList-right-item-info">
+						<view class="frii-word1">西红柿鸡蛋面</view>
+						<view class="frii-word2 flex flex-Updown-between">
+							<text>¥19.8</text>
+							<view class="button" catchtap="showSelete">选择</view>
+							<!-- <image src="../../imgs/takeOrder/add.png"></image> -->
+						</view>
+					</view>
+				</view>
+				<view class="food-line"></view>
+			</view>
+		</scroll-view>
+	</view>
+</view>
+<view class="topay flex flex-Updown-between">
+	<view class="topay-left flex flex-Updown-between">
+		<view class="topay-carts" catchtap="openCarts">
+			<image  class="childAll" src="../../imgs/takeOrder/cart.png"></image>
+			<view>2</view>
+		</view>
+		<text>￥28</text>
+	</view>
+	<view class="topay-right button" catchtap="toPaying">付款</view>
+</view>
+
+<view class="seleteFood" wx:if="{{isSelete}}">
+	<view class="seleteFood-box">
+		<view class="sb-tit">西红柿鸡蛋面</view>
+		<view class="sb-selete">
+			<view class="sb-selete-word">口味</view>
+			<view class="sb-selete-detail flex warp flex-Updown">
+				<view class="ssd-item {{index1==index?'ssd-item-active':''}}" wx:for="{{arr1}}" data-type="1" catchtap="seleteDetail" data-index="{{index}}" wx:key="index">{{item}}</view>
+			</view>
+		</view>
+		<view class="sb-selete">
+			<view class="sb-selete-word">做法</view>
+			<view class="sb-selete-detail flex warp flex-Updown">
+				<view class="ssd-item {{index2==index?'ssd-item-active':''}}" wx:for="{{arr2}}" data-type="2" catchtap="seleteDetail" data-index="{{index}}" wx:key="index">{{item}}</view>
+			</view>
+		</view>
+		<view class="sb-bottom flex flex-Updown-between">
+			<text>￥12.8</text>
+			<view class="button" catchtap="addCart">加入购物车</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="carts" wx:if="{{cartShow}}" catchtap="cartHides">
+	<view class="carts-box" style="bottom:{{cartBoxs?98:-229}}rpx" catchtap="stopMp">
+		<view class="carts-top flex flex-Updown-between">
+			<text>已选</text>
+			<view class="flex flex-Updown">
+				<image src="../../imgs/takeOrder/deles.png"></image>
+				<text>清空</text>
+			</view>
+		</view>
+		<scroll-view scroll-y="true" style="height:250rpx;width:100%">
+			<view class="cartsitems" wx:for="{{3}}" wx:key="index">
+				<view class="carts-item flex flex-Updown-between">
+					<view class="ci-left flex flex-Updown">
+						<image src="../../imgs/home/070.jpg"></image>
+						<view class="ci-left-right">
+							<view class="cll1">红烧牛肉面</view>
+							<view class="cll2">加辣/加汤</view>
+							<view class="cll3">
+								<text>¥12.5</text>
+								<text>¥14.5</text>
+							</view>
+						</view>
+					</view>
+					<view class="ci-right flex flex-Updown ">
+						<image catchtap="changeNum" data-num="-1" src="../../imgs/takeOrder/deledele.png"></image>
+						<text>{{shopNum}}</text>
+						<image catchtap="changeNum" data-num="1" src="../../imgs/takeOrder/add.png"></image>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

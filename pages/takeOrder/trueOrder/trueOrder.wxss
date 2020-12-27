@@ -1,0 +1,172 @@
+/* pages/takeOrder/trueOrder/trueOrder.wxss */
+.content {
+  border-top: 0.5rpx solid transparent;
+  background: #f4f4f4;
+}
+
+.orderName {
+
+  padding: 0 31rpx;
+  width: 710rpx;
+  margin: 20rpx auto 0;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  height: 188rpx;
+  background: #fff;
+}
+
+.orderName-left text {
+  color: #333333;
+  font-size: 26rpx;
+  max-width: 618rpx;
+  white-space: pre-wrap;
+}
+
+.orderName-left text:nth-child(1) {
+  margin-bottom: 34rpx;
+}
+
+.orderName>image {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.orderInfo {
+  width: 710rpx;
+  margin: 25rpx auto 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 0px rgba(80, 80, 80, 0.1);
+  overflow: hidden;
+  padding: 0 30rpx 35rpx;
+  box-sizing: border-box;
+}
+
+.orderInfo-item {
+  width: 100%;
+  margin-top: 32rpx;
+}
+
+.orderInfo-item>image {
+  width: 146rpx;
+  height: 146rpx;
+}
+
+.orderInfo-item .oi-name {
+  width: 460rpx;
+}
+
+.oi1 {
+  width: 100%;
+}
+
+.oi1>text:first-child {
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.oi1>text:last-child {
+  color: #F9191F;
+  font-size: 24rpx;
+}
+
+.oi2 {
+  color: #888888;
+  font-size: 24rpx;
+  margin-top: 27rpx;
+}
+
+.oi3 {
+  width: 100%;
+}
+
+.oi3>text {
+  color: #888888;
+  font-size: 24rpx;
+  margin-top: 34rpx;
+}
+
+.orderLine {
+  width: 100%;
+  height: 2rpx;
+  margin-top: 50rpx;
+  background: #E3E3E3;
+}
+
+.prices {
+  font-size: 24rpx;
+  margin-top: 35rpx;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.pt1 {
+  color: #888888;
+}
+
+.pt2 {
+  color: #333333;
+}
+
+.pt3 {
+  color: #F9191F;
+}
+
+.instructe {
+  width: 710rpx;
+  height: 88rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: 19rpx auto 0;
+}
+
+.instructe .it1 {
+  color: #000000;
+  font-size: 26rpx;
+  margin-left: 33rpx;
+}
+
+.instructe .it2 {
+  color: #888888;
+  font-size: 24rpx;
+  margin-left: 18rpx;
+}
+
+.instructe image {
+  width: 31rpx;
+  height: 31rpx;
+  margin-left: 15rpx;
+}
+
+.submits {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 98rpx;
+  padding: 0 22rpx 0 32rpx;
+  background: #ffffff;
+  box-shadow: -3rpx 2rpx 8rpx 0rpx rgba(25, 25, 25, 0.51);
+  box-sizing: border-box;
+}
+
+.submit-left text {
+  font-size: 30rpx;
+}
+
+.submit-left .st1 {
+  color: #161616;
+}
+
+.submit-left .st2 {
+  color: #F9191F;
+}
+
+.submit-right {
+  width: 288rpx;
+  height: 72rpx;
+  color: #fff;
+  background: linear-gradient(113deg, #fccf2b 1%, #ffad26 99%);
+  border-radius: 36rpx;
+  line-height: 72rpx;
+}

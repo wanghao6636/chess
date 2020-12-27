@@ -1,0 +1,72 @@
+<!--pages/community/chatRoom/chatRoom.wxml-->
+<scroll-view class="content">
+	<view class="chat-time">10:40</view>
+	<view class="chats">
+		<!-- 左边 -->
+		<view style="width:100%" wx:for="{{arr}}" wx:key="index">
+			<view wx:if="{{item.isWho=='1'}}">
+				<view class="chat-left flex">
+					<image src="{{item.headSrc}}"></image>
+					<view class="chat-body">
+						<text class="chat-body-name block">一直打哈欠</text>
+
+						<!-- 对话框 -->
+						<view class="chat-dialog" wx:if="{{item.type=='text'}}">
+							<text>{{item.content}}</text>
+							<view></view>
+						</view>
+
+						<!-- 图片 -->
+						<view class="chat-dialog" style="padding:0;width: 298rpx;height: 202rpx"  wx:if="{{item.type=='image'}}">
+							<image class="chat-image childAll" src="{{item.src}}"></image>
+							<view></view>
+						</view>
+
+						<!-- 音频 -->
+						<view class="chataudio flex flex-Updown" wx:if="{{item.type=='audio'}}">
+							<view class="chat-dialog" style="width:292rpx;height:80rpx">
+								<view></view>
+							</view>
+							<text class="chat-audio">{{item.content}}</text>
+						</view>
+
+					</view>
+				</view>
+			</view>
+			<!-- 右边 -->
+			<view wx:if="{{item.isWho == '0'}}">
+				<view class="chat-right  flex" style="flex-direction:row-reverse">
+					<image src="{{item.headSrc}}"></image>
+					<view class="chat-body">
+						<!-- 对话框 -->
+						<view class="chat-dialog" wx:if="{{item.type=='text'}}">
+							<text>{{item.content}}</text>
+							<view style="right:-15rpx !important;"></view>
+						</view>
+						<!-- 图片 -->
+						<view class="chat-dialog" style="padding:0;width: 298rpx;height: 202rpx"  wx:if="{{item.type=='image'}}">
+							<image class="chat-image childAll" src="{{item.src}}"></image>
+							<view></view>
+						</view>
+						<!-- 音频 -->
+						<view class="chataudio flex flex-Updown" wx:if="{{item.type=='audio'}}">
+							<view class="chat-dialog" style="width:292rpx;height:80rpx">
+								<view style="right:-15rpx !important;"></view>
+							</view>
+							<text class="chat-audio">{{item.content}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+	</view>
+
+</scroll-view>
+
+<view class="chatInput flex flex-Updown">
+	<image class="chatInputi1" src="../../../imgs/takeOrder/audio.png"></image>
+	<input type="text"></input>
+	<image class="chatInputi2" src="../../../imgs/takeOrder/cary.png"></image>
+	<image class="chatInputi3" src="../../../imgs/takeOrder/add1.png"></image>
+</view>

@@ -1,0 +1,55 @@
+<!--pages/home/home.wxml-->
+<view class="parent content"> 
+  <view style="width:100%;background:#fff;" class="header">
+    <view style="height:{{statusBarHeight*2}}rpx"></view>
+    <view class="flex flex-Updown-between statusNav" style="height:{{MenuButtonHight*2}}rpx;width:100%">
+      <view class="statusNav-left flex flex-Updown" style="width:{{MenuButtonWidth*2}}rpx">
+        <text>{{shop_name}}</text>
+        <image src="../../imgs/home/bottom.png"></image>
+      </view>
+      <text>预订</text>
+      <view style="width:{{MenuButtonWidth*2}}rpx;height:100%"></view>
+    </view>
+    <view style="height:13rpx"></view>
+  </view>
+  <view class="cotent-view">
+    <swiper class="swiper" circular autoplay bindchange="currentChange">
+      <swiper-item>
+        <view class="swiper-item childAll">
+          <image class="childAll" src="../../imgs/home/036.jpg"></image>
+          <view class="wordInfo flex flex-center">
+            <!-- <image></image> -->
+            <text>探索馆内趣味之旅</text>
+            <!-- <image></image> -->
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+
+    <view class="swiper-indicator flex flex-center">
+      <view wx:for="{{2}}" wx:key="index"  class="indicator-dots {{current==index?'indicator-dot-active':''}}"></view>
+    </view>
+
+    <view class="orderBox ">
+      <view class="order-box-title flex flex-Updown-between">
+        <text>包厢预订</text>
+        <image src="../../imgs/takeOrder/right.png"></image>
+      </view>
+
+       <view class="order-boxs flex flex-Updown warp">
+        <view class="order-boxs-item" wx:for="{{list}}" wx:key="index" catchtap="toDetail" data-box_shop="{{item.box_shop}}"  data-box_img="{{item.box_img}}" data-box_allprice="{{item.box_allprice}}" data-box_slotprice="{{item.box_slotprice}}">
+          <image :src="item.box_img"></image>
+          <view class="flex flex-Updown-between order-boxs-item-bottom">
+            <view class="order-boxs-item-info ">
+              <text class="block">{{item.box_shop}}</text>
+              <text class="block">{{item.box_allprice}}</text>
+            </view>
+            <view  class="ordered button">预订</view>
+          </view>
+        </view>
+       </view> 
+
+    </view>
+  </view>
+
+</view>
